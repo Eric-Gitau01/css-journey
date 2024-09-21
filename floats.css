@@ -1,0 +1,28 @@
+body {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.block {
+    width: 30vw;
+    height: 30vw;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+
+.left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.right {
+    float: right;
+    margin-left: 0.5rem;
+}
+
+/* .clear {
+    clear: both;
+} */
+
+/* The float property is used to float elements to the left or right of their container, allowing text or other content to wrap around them. For example, you might float an image to the left and have the text wrap around it. To clear floats (so they don’t affect the layout of subsequent elements), you can use the clear property (clear: both or clear: left/right). While powerful, floats are less commonly used today for layouts, as more modern layout techniques like Flexbox and Grid have become standard. */

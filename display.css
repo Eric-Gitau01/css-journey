@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* main {
+    background-color: aqua;
+    width: 50%;
+} */
+
+.opposite {
+    display: inline-block;
+    background-color: black;
+    color: antiquewhite;
+    margin
+}
+
+p {
+    background-color: lightgrey;
+}
+
+/* block level element takes up the full width and you can change there margin and padding 
+they stuck on top of each other and creates a new line*/
+
+/* while inline element takes the width of the available content only you can"t style it using margin padding and other 
+-they don't stuck on top of each other and do not create and new line */
+
+/* inline block acts as a high breed as it will the content inline but you can apply the padding, height and margin*/
+
+ul {
+    list-style-type: none;
+    text-align: right;
+    background-color: black;
+    padding: 0.5rem;
+}
+
+li {
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+
+/* margin-inline and margin-block are used for inline and block level elements respectively.
+They are used to control the space around the inline-block elements */
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
