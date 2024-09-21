@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth scroll;
+}
 body {
     background-color: black !important;
     color: white;
@@ -61,3 +64,69 @@ body {
     padding: 1rem;
 }
 /* The position property controls how elements are positioned in a document. There are several options: static (default, normal flow), relative (positioned relative to its normal position), absolute (positioned relative to its nearest positioned ancestor), and fixed (positioned relative to the browser window). You can use top, right, bottom, and left properties to control an element's exact position. Understanding position is essential for creating complex layouts and interactive designs. */
+
+/* The z-index property controls the stack order of an element. Elements with a higher z-index will be placed in front of elements with a lower z-index. If two elements have the same z-index, the element with the lower positioned will be placed in front. By default, elements have a z-index of 0, meaning they will appear in the normal flow. */
+
+/* The top, right, bottom, and left properties define the position of an absolutely positioned element relative to its nearest positioned ancestor. If an absolutely positioned element has no positioned ancestors, it will be positioned relative to the viewport. */
+
+/* The fixed position is used to position an element relative to the viewport, regardless of how far it is scrolled. Fixed positioned elements remain in the same place on the page even when scrolling. */
+
+/* The sticky position is used to position an element relative to the viewport, but it will stay in place as long as the user scrolls. Sticky positioned elements will adapt their position to remain visible when scrolling. */
+
+/* The sticky position is a CSS positioning technique that creates an element that behaves like a fixed position, but it is positioned relative to the viewport instead of its nearest positioned ancestor. Sticky positioned elements remain visible as long as the user scrolls, even when scrolling. */
+
+section {
+    height: 100vh;
+
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+header, footer {
+    color: white;
+    text-align: center;
+    height: 100px;
+    font-size: 5rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+   background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 3rem;
+}
+
+/* The sticky position is a CSS positioning technique that creates an element that behaves like a fixed position, but it is positioned relative to the viewport instead of its nearest positioned ancestor. Sticky positioned elements remain visible as long as the user scrolls, even when scrolling. */
+
+a:visited {
+    color: white;
+    background-color: #fff;
+    font: inherit !important;
+}
+
+.social {
+    background-color: royalblue !important;
+    color: #fff;
+    font-size: inherit ;
+    position: fixed;
+    top: 30%;
+    z-index: 1;
+    padding: 1rem;
+}
+
