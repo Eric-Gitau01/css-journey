@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: "Roboto", sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row nowrap;
+    align-content: space-evenly;
+    gap: 1rem;
+
+}
+
+.box {
+    /* min-width: 100px; */
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    /* flex-basis: 250px;
+    flex-grow: 1; */
+    flex: 1 1 150px;
+}
+
+.box:nth-child(2) {
+   flex-shrink: 2 2 150px;
+   background-color: red;
+   order: -1;
+}
+
+/* Flexbox is a modern CSS layout model that allows for the creation of flexible, responsive layouts. It uses the display: flex; property on a container, making its children automatically adjust based on the available space. Flexbox simplifies the process of aligning items (e.g., vertically centering) and controlling their size. Important properties include justify-content (controls horizontal alignment), align-items (vertical alignment), and flex-wrap (allows items to wrap to a new line if needed). */
+
+/* Flexbox layout consists of a container (flex container) and its items (flex items). The flex container has the display: flex; property, while the flex items have the display: flex; property as well. The container can have multiple flex items, and the flex items can be nested within each other. By default, flex items will stretch to fill the available space along their main axis (either horizontal or vertical). */
+
+/* Flexbox allows you to align and distribute the space evenly among its child elements. You can control the horizontal and vertical alignment using the justify-content and align-items properties, respectively. You can also control the wrapping behavior using the flex-wrap property. For example, flex-wrap: wrap; will allow the flex items to wrap to a new line if they exceed the available space. */
+
+/* Flexbox is a powerful tool for creating responsive and flexible layouts, making it a popular choice for web developers. It offers a flexible and efficient way to align and distribute space among elements, making it easier to create visually appealing and responsive designs. */
