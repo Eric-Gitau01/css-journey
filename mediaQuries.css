@@ -11,8 +11,91 @@ GENERAL STYLE */
 body {
     font: 1.5rem "Nunito", sans-serif;
     min-height: 100vh;
+
+    background-color: gray;
+    background-image: radial-gradient(whitesmoke, gray);
+    display: flex;
+    flex-direction: column;
 }
 
-@media screen and (min-width: 481px) {
-
+header, nav, main, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
 }
+
+header, footer {
+    position: sticky;
+    background-color: #1E2938;
+    color: white;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: white;
+    color: #1E2938;
+    padding: 0.5rem;
+    border-bottom: 2px solid #0000;
+}
+footer {
+    bottom: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+
+/* small */
+
+@media screen and (min-width : 576px) {
+    body {
+        background-color: green;
+        background-image: radial-gradient(whitesmoke,green);
+    }
+    nav {
+        display: none;
+    }
+}
+/* medium */
+@media screen and (min-width : 768px) {
+    body {
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke,gold);
+    }
+}
+
+
+@media screen and (min-width : 992px) {
+    body {
+        background-color: firebrick !important;
+        background-image: radial-gradient(whitesmoke,firebrick !important;);
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    body {
+        background-color: darkblue;
+        background-image: radial-gradient(whitesmoke, darkblue);
+    }
+}
+
+/* mobile landscape */
+
+@media screen and (max-width : 576px) and (orientation : landscape) {
+    body {
+        background-color: blue;
+        background-image: radial-gradient(whitesmoke, blue);
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    nav {
+        display: none;
+    }
+}
+
